@@ -25,6 +25,7 @@ def list_all_videos(videos):
 
 def add_video(videos):
     print("-" * 25)
+
     title = input("Enter the title of the video: ")
 
     if not title:
@@ -146,35 +147,26 @@ def main():
         print("5. Exit the application")
         print("-" * 25)
         choice = input("Enter your choice: ")
+        print("-" * 25)
 
         match choice:
             case "1":
-                print("-" * 25)
                 print("\nListing all Youtube videos")
-                print("-" * 25)
                 list_all_videos(videos)
             case "2":
-                print("-" * 25)
                 print("Adding a Youtube video")
                 add_video(videos)
-                print("-" * 25)
             case "3":
-                print("-" * 25)
                 print("Updating a Youtube video")
                 update_video(videos)
-                print("-" * 25)
             case "4":
-                print("-" * 25)
                 print("Deleting a Youtube video")
                 delete_video(videos)
-                print("-" * 25)
             case "5":
-                print("-" * 25)
                 print("Exiting the application")
                 print("-" * 25)
                 break
             case _:
-                print("-" * 25)
                 print("Invalid choice")
 
 
